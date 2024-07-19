@@ -9,3 +9,6 @@ def products(request):
 
 def product_details(request):
     return render(request,'products_details.html')
+
+def cart(request):
+    return render(request,'cart.html')
