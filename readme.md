@@ -1,23 +1,90 @@
-### Ecommerce Template 👋
 
-[Demo](https://samwitadhikary.github.io/Ecommerce/)
+# Ecommerce Website with Django Backend
 
-## Working!
-- It is a pure Ecommerce Template made Purely in HTML and CSS with Full Responsive Mode. It has multipage functionality and awesome looks.
-- Want to get this source code. Do fork it. 
-- Have any more ideas, make a pull request.
+This project is a forked repository that originally contained only the frontend of an ecommerce website. I have added backend functionality using the Django framework. The backend is equipped with CRUD functionality, user management, real-time order management, and uses PostgreSQL as the database.
 
-### Connect with me:
+## Features
 
-[<img align="left" alt="samwitadhikary.github.io/my-profile" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="Samwit | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="Samwit | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Samwit | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+- **CRUD Functionality**: Create, Read, Update, and Delete products and other resources.
+- **User Management**: User authentication and authorization.
+- **Real-Time Order Management**: Handle orders in real-time.
+- **PostgreSQL Database**: Robust database for handling complex queries and large data sets.
 
-<br />
+## Installation
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/ecommerce-website.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd ecommerce-website
+    ```
+3. Set up a virtual environment:
+    ```sh
+    python -m venv venv
+    ```
+4. Activate the virtual environment:
+    - On Windows:
+        ```sh
+        venv\Scripts\activate
+        ```
+    - On macOS and Linux:
+        ```sh
+        source venv/bin/activate
+        ```
+5. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+6. Set up the database:
+    ```sh
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+7. Create a superuser to access the admin panel:
+    ```sh
+    python manage.py createsuperuser
+    ```
+8. Run the development server:
+    ```sh
+    python manage.py runserver
+    ```
+
+## Usage
+
+- Access the website at `http://127.0.0.1:8000`.
+- Access the admin panel at `http://127.0.0.1:8000/admin` to manage users, products, and orders.
+
+## Contributing
+
+If you have any ideas or modifications for this project, feel free to fork the repository and make a pull request. Here’s how you can do it:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```sh
+    git checkout -b feature-branch
+    ```
+3. Make your changes and commit them:
+    ```sh
+    git commit -m "Add some feature"
+    ```
+4. Push to the branch:
+    ```sh
+    git push origin feature-branch
+    ```
+5. Open a pull request.
+
+## Contact
+
+For any inquiries, feel free to reach out:
+
+- **Name**: K P Aatmik
+- **LinkedIn**: [linkedin.com/in/k-p-aatmik/](https://www.linkedin.com/in/k-p-aatmik/)
+- **GitHub**: [github.com/kpaatmik](https://github.com/kpaatmik)
+
 ---
 
-[website]: https://samwitadhikary.github.io/my-profile
-[twitter]: https://twitter.com/SamwitAdhikary
-[instagram]: https://www.instagram.com/samwit_adhikary
-[linkedin]: https://www.linkedin.com/in/samwit-adhikary-2487161a3/
+Thank you for contributing to this project! Together, we can build something amazing.
+```
+
