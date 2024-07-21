@@ -75,10 +75,6 @@ If you have any ideas or modifications for this project, feel free to fork the r
     ```
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Contact
 
 For any inquiries, feel free to reach out:
@@ -92,18 +88,3 @@ For any inquiries, feel free to reach out:
 Thank you for contributing to this project! Together, we can build something amazing.
 ```
 
-
-### Connect with me:
-
-[<img align="left" alt="samwitadhikary.github.io/my-profile" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="Samwit | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
-[<img align="left" alt="Samwit | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="Samwit | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
-
-<br />
----
-
-[website]: https://samwitadhikary.github.io/my-profile
-[twitter]: https://twitter.com/SamwitAdhikary
-[instagram]: https://www.instagram.com/samwit_adhikary
-[linkedin]: https://www.linkedin.com/in/samwit-adhikary-2487161a3/
