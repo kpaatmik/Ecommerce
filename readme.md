@@ -14,11 +14,11 @@ This project is a forked repository that originally contained only the frontend 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/ecommerce-website.git
+    git clone https://github.com/kpaatmik/Ecommerce.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd ecommerce-website
+    cd Ecommerce
     ```
 3. Set up a virtual environment:
     ```sh
