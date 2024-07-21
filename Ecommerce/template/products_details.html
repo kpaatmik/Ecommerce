@@ -1,0 +1,64 @@
+{%extends 'blank_layout.html'%}
+{%load static%}
+{%block content %}
+
+
+<!-- Single Products -->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src={{product.image.url}} width="100%" id="ProductImg">
+
+            
+
+        </div>
+        <div class="col-2">
+            <p>{{product.title}}</p>
+            <h1>{{product.title}}</h1>
+            <h4>₹{{product.price}}</h4>
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>L</option>
+                <option>M</option>
+                <option>S</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+
+            <h3>Product Details <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>{{product.description}}</p>
+        </div>
+    </div>
+</div>
+<!-- title -->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+<!-- Products -->
+<div class="small-container">
+    <div class="row">
+        {%for product in random_product%}
+        <div class="col-4">
+            
+            <a href="{% url 'product_details' product.id %}"><img src={{product.image.url}}></a>
+            <h4>{{product.title}}</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+            <p>₹{{product.price}}</p>
+            
+        </div>
+        {%endfor%}
+    </div>
+</div>
+{%endblock content%}
