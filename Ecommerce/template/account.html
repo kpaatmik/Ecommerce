@@ -16,17 +16,20 @@
                         <hr id="Indicator">
                     </div>
                     <form id="LoginForm">
-                        <input type="text" placeholder="Username">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Login</button>
+                        <input type="text" name="username" required minlength="3" maxlength="10" placeholder="Username">
+                        <input type="password" name="password" required placeholder="Password">
+                        <button type="submit" name="login" class="btn">Login</button>
                         <a href="">Forget Password</a>
                     </form>
 
                     <form id="RegForm">
-                        <input type="text" placeholder="Username">
-                        <input type="email" placeholder="Email">
-                        <input type="password" placeholder="Password">
-                        <button type="submit" class="btn">Register</button>
+                        <input type="text" name="username" required minlength="3" maxlength="10" placeholder="Username">
+                        <input type="email" name="email" required placeholder="Email">
+                        <input type="password" name="password" required minlength="5"  placeholder="Password">
+                        <input type="text" name="address" required minlength="5"  placeholder="address">
+                        <input type="text" name="phone" required minlength="5"  placeholder="phone">
+                        <button type="submit" name="register" class="btn">Register</button>
+                        <a href="">Forget Password</a>
                     </form>
                 </div>
             </div>
