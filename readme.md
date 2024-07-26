@@ -83,8 +83,4 @@ For any inquiries, feel free to reach out:
 - **LinkedIn**: [linkedin.com/in/k-p-aatmik/](https://www.linkedin.com/in/k-p-aatmik/)
 - **GitHub**: [github.com/kpaatmik](https://github.com/kpaatmik)
 
----
-
-Thank you for contributing to this project! Together, we can build something amazing.
-```
 
