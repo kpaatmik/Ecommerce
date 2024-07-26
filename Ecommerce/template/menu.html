@@ -9,11 +9,16 @@
                     <li><a href="{% url 'list_products' %}">Products</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
+                    {%if not user.is_authenticated%}
                     <li><a href="{% url 'accout_details' %}">Account</a></li>
+                    {%endif%}
                 </ul>
             </nav>
+            {%if user.is_authenticated%}
             <a href="{% url 'cart' %}"><img src={% static 'images/cart.png' %} width="30px" height="30px"></a>
             <img src={% static 'images/menu.png' %} class="menu-icon" onclick="menutoggle()">
+            <li><a href="{% url 'log_out' %}">logout</a></li>
+            {%endif%}
         </div>
         
 

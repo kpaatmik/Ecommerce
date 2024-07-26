@@ -9,20 +9,29 @@
                 <img src={% static 'images/image1.png' %} width="100%">
             </div>
             <div class="col-2">
+                {% if messages %}
+                <div class="message-container">
+                    {%for message in messages%}
+                        <li>{{message}}</li>
+                    {%endfor%}
+                </div>
+                {% endif %}
                 <div class="form-container">
                     <div class="form-btn">
                         <span onclick="login()">Login</span>
                         <span onclick="register()">Register</span>
                         <hr id="Indicator">
                     </div>
-                    <form id="LoginForm">
+                    <form id="LoginForm" method="post" enctype="multipart/form-data">
+                        {%csrf_token%}
                         <input type="text" name="username" required minlength="3" maxlength="10" placeholder="Username">
                         <input type="password" name="password" required placeholder="Password">
                         <button type="submit" name="login" class="btn">Login</button>
                         <a href="">Forget Password</a>
                     </form>
 
-                    <form id="RegForm">
+                    <form id="RegForm" method="post" enctype="multipart/form-data">
+                        {%csrf_token%}
                         <input type="text" name="username" required minlength="3" maxlength="10" placeholder="Username">
                         <input type="email" name="email" required placeholder="Email">
                         <input type="password" name="password" required minlength="5"  placeholder="Password">
@@ -57,4 +66,10 @@
     }
 </script>
 {%endblock add_script%}
+{%if register%}
+<script>register()</script>
+    
+{%else%}
+<script>login()</script>
+{%endif%}
 {% endblock content %}
