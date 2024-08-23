@@ -29,5 +29,3 @@ def product_details(request,pk):
     context={**context1, **context2}
     return render(request,'products_details.html',context)
 
-def cart(request):
-    return render(request,'cart.html')
