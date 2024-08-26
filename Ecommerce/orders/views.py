@@ -1,6 +1,8 @@
 from django.shortcuts import render,redirect
 from . models import Order,OrderedItem
 from products.models import Product
+from django.contrib.auth.models import User
+from customers.models import Customer
 # Create your views here.
 def cart(request):
     user=request.user
@@ -12,6 +14,12 @@ def cart(request):
     context={'cart':cart_obj}
     return render(request,'cart.html',context)
 def add_to_cart(request):
+    
+
+    users_without_profile = User.objects.filter(customer_profile__isnull=True)
+    for user in users_without_profile:
+        Customer.objects.create(user=user)
+
     if request.POST:    
         user=request.user
         customer=user.customer_profile
